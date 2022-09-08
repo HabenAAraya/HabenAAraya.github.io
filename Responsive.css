@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+#header{
+    grid-area: head;
+    background-color: lightblue;
+    text-align: center;
+    color: black;
+    font: bold;
+    height: 100px;
+}
+#column{
+
+    height: 300px;
+    display: flex;
+    grid-area: column;
+    flex-direction: row;
+}
+#column1{
+    background-color: #aaaaaa;
+    width: 200px;
+}
+#column2{
+    background-color: #bbbbbb;
+    width: 600px;
+}
+#column3{
+    background-color: #cccccc;
+    width: 500px;
+  
+}
+
+#menu{
+    grid-area: menu;
+    color: white;
+    background-color: darkslategray;
+    display: flex;
+    height: 50px;
+    flex-direction: row;
+    
+
+}
+#footer{
+    background-color: darkslategray;
+    color: white;
+    height: 100px;
+    text-align: center;
+    grid-area: footer;
+    font: bolder;
+}
+#container{
+    flex-direction: row;
+    font-size: 20px;
+    height: 300px;
+    margin: 3%;
+    display: grid;
+    grid-template-areas: 
+    'head head head head'
+    'head head head head'
+    'menu menu menu menu'
+    'column column column column'
+    'column column column column'
+    'column column column column'
+    'footer footer footer footer'
+    'footer footer footer footer'
+    'footer footer footer footer';
+
+}
+#menu1{
+    width: 70px;
+   border-right: 1px solid black;
+}
+#menu2{
+    width: 70px;
+    border-right: 1px solid black;
+}
+#menu3{
+    width: 70px;
+    border-right: 1px solid black;
+}
+@media screen and (max-width: 600px) {
+    #container{
+        display: grid;
+        grid-template-areas: 
+        'head head head head'
+        'head head head head'
+        'menu menu menu menu'
+        'column column column column'
+        'column column column column'
+        'column column column column'
+        'footer footer footer footer'
+        'footer footer footer footer'
+        'footer footer footer footer';
+    }
+
+    #column{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    @media screen and(min-width:600px) {
+        #container{
+            display: grid;
+            grid-template-areas: 
+            'head head head head'
+            'head head head head'
+            'menu menu menu menu'
+            'column column column column'
+            'column column column column'
+            'column column column column'
+            'footer footer footer footer'
+            'footer footer footer footer'
+            'footer footer footer footer';
+            }
+        
+
+        
+    }
+
+
+
+
+
+}
