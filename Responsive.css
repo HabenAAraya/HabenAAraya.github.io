@@ -18,15 +18,15 @@
 }
 #column1{
     background-color: #aaaaaa;
-    width: 200px;
+    width: 400px;
 }
 #column2{
     background-color: #bbbbbb;
-    width: 600px;
+    width: 800px;
 }
 #column3{
     background-color: #cccccc;
-    width: 500px;
+    width: 600px;
   
 }
 
@@ -49,6 +49,13 @@
     font: bolder;
 }
 
+#column{
+    height: 300px;
+    grid-area: column;
+    display: flex;
+    flex-direction: row;
+}
+
 #menu1{
     width: 70px;
    border-right: 1px solid black;
@@ -63,8 +70,11 @@
 }
 @media screen and (max-width: 600px) {
     #container{
+
+        
         display: grid;
         grid-template-areas: 
+
         'head head head head'
         'head head head head'
         'menu menu menu menu'
@@ -73,16 +83,13 @@
         'column column column column'
         'footer footer footer footer'
         'footer footer footer footer'
-        'footer footer footer footer';
     }
 
-    #column{
-        display: flex;
-        flex-direction: row-reverse;
-    }
+   
 
-    @media screen and(min-width:600px) {
+    @media only screen and (min-width:600px) {
         #container{
+            
             display: grid;
             grid-template-areas: 
             'head head head head'
@@ -93,13 +100,16 @@
             'column column column column'
             'footer footer footer footer'
             'footer footer footer footer'
-            'footer footer footer footer';
-            }
+         }
         
 
         
     }
 
+    #column{
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
 
 
