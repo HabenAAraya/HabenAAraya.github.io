@@ -68,7 +68,7 @@
     width: 70px;
     border-right: 1px solid black;
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     #container{
 
         
@@ -87,7 +87,7 @@
 
    
 
-    @media only screen and (min-width:600px) {
+    @media only screen and (max-width:600px) {
         #container{
             
             display: grid;
