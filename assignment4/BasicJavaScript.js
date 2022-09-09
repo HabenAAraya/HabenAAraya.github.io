@@ -137,4 +137,44 @@ function largest(a,b,c){
         console.log(shortest(["hello","z","bye"]));
 
 
+
+        function myFunctionTest(expected, found) {
+            if (expected === found) {
+              return "TEST SUCCEEDED";
+            } else {
+              return "TEST FAILED.  Expected " + expected + " found " + found;
+            }
+          }
+
+console.log("Expected output of max(4,7) is 7 and  " +
+   myFunctionTest(7, function(){return max( 7, 4);} ));
+
+console.log("Expected output of maxOfThree(1,4,9) is 9 and  " +
+    myFunctionTest(9, function(){return maxOfThree(1,4,9);} )); 
+
+
+console.log("Expected output of isVowel('u') is false and  " +
+    myFunctionTest(false, function(){return isVowel('u');} ));
+
+
+console.log("Expected output of sum([1,2,3,4]) is 10 and  " +
+    myFunctionTest(10, function(){return sum([1,2,3,4]);} ));
+
+
+console.log("Expected output of mul([1,2,3,4]) is 24 and  " +
+    myFunctionTest(24, function(){return mul([1,2,3,4]);} ));
+
+
+console.log("Expected output of reverse(haben) is nebah and  " +
+    myFunctionTest("nebah", function(){return reverse("haben");} ));
+
+
+console.log("Expected output of findLongestWord([\"i\",\"am\",\"the\",\"person\"]) is \"person\" and  " +
+   myFunctionTest("bonjour", function(){return findLongestWord(["i","am","the","person"]);} )); 
+
+
+console.log("Expected output of filterLongWords([\"i\",\"am\",\"the\",\"person\",\"haben\"],4) is [\"person\",\"haben\"]] and  " +
+   myFunctionTest(["haben","person"], function(){return filterLongWords(["i","am","the","person","haben"],4);} ));
+
+
     
