@@ -22,7 +22,7 @@ var CUSTOM = "";   // you could change the value of this variable in your code
 var EXERCISE = "  o\n" +
     " /#\\\n" +
     " _|_\n" +
-    "=====\n" +
+    "=====\n" +π
     " \\o/\n" +
     "  #\n" +
     "_/ \\_\n";
