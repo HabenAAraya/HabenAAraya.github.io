@@ -62,6 +62,18 @@ console.log("x7 is:"+ x);
 
 console.log(main());
 
+var funcs = [];
+for (var i = 0; i < 5; i++) {
+ funcs[i] = function() {
+ return i;
+ };
+}
+console.log(funcs[0]());
+console.log(funcs[1]());
+console.log(funcs[2]());
+console.log(funcs[3]());
+console.log(funcs[4]());
+
 
 
 
